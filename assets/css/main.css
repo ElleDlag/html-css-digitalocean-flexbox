@@ -8,35 +8,34 @@
     z-index:1;
     background: #fff
 }
-.navbar>*{
-    padding:0 20px;
-}
 .navbar .navbar_top{
     border-bottom: 1px solid #ddd;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    display: flex;
+    align-items:center;
+    height: 40px;
 }
 .navbar .nav-left-promo{
-    display: inline-block;
     padding: 2px 0;
+    flex-grow:1
 }
 .navbar .navbar_top a.btn{
     background: #00d7d2;
     color:#000;
     text-transform: uppercase;
-    padding:4px 8px;
     font-size: 9px;
-    line-height: 9px;
     vertical-align: middle
 }
 .navbar .navbar_top a:not(.btn){
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    line-height: 17px;
     color: #777;
-    padding:5px 15px;
+    padding:0 15px;
     vertical-align: middle
+}
+.navbar .navbar_top .nav-list_top{
+    margin:0;
+    display:flex;
 }
 .navbar .navbar_bottom .nav-list_bottom a:focus,
 .navbar .navbar_top .nav-list_top a:focus{
