@@ -1,0 +1,362 @@
+/* #region  body and structure */
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    position: relative;
+}
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.clearfix>*{
+float: left;
+}
+.mt-16{
+    margin: 0;
+    margin-top: 16px;
+    position: relative
+}
+.mb-16{
+    margin: 0;
+    margin-bottom: 16px;
+    position: relative
+}
+.pt-16{
+    padding-top: 16px;
+}
+.txt-l{
+    text-align: left
+}
+.row{
+    text-align: center;
+}
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+.wrapper-small{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+/* #endregion */
+
+
+/* #region  TEXT AND LIST */
+h1{
+    font-size: 6.2rem;
+    font-weight: 700;
+    text-align: left
+}
+h2{
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-align: center;
+    color:#000;
+    margin:8px 0 32px
+}
+h2.submenu-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    color:#000;
+    margin: 8px 0 0;
+    text-transform: uppercase
+}
+h3.title-partner{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#777;
+    text-align: center;
+}
+h3.h3-section_sub{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: left;
+    margin:8px 0 16px;
+}
+p.p-title{
+    font-size:2.4rem;
+    font-weight: 400;
+    opacity: .8;
+    letter-spacing: 1.7px;
+    line-height: 3.8rem;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+p.p_form-terms{
+    color:#777;
+    font-size: 12px;
+
+}
+p.p-section{
+    font-size:2rem;
+    font-weight:400;
+    text-align: center;
+    margin:16px 0 64px;
+}
+p.p-section_sub{
+    font-size:1.6rem;
+    font-weight:400;
+    line-height: 2.4rem;
+    text-align: left
+}
+.p-quote{
+    font-size: 2.4rem;
+    font-weight: 100;
+    line-height: 3.5rem;
+    text-align: center;
+    opacity: 0.6;
+    letter-spacing: 0px;
+    margin-bottom: 16px; 
+}
+.p-footer{
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: "DM Sans",sans-serif;
+    color: #fff;
+    text-align:left;
+    opacity: 0.4;
+    line-height: 5rem;
+    margin-left: 15px;
+}
+footer .fab{
+    line-height: 5rem;
+    color:#fff;
+    font-size: 2.1rem;
+    opacity: .6;
+}
+a{
+    color:#0069ff;
+    font-size: 16px;
+}
+.sublink-2 a{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:#000;
+    opacity: 0.6;
+    line-height: 30px;
+    text-decoration: none;
+}
+.list-link-toggle a{
+    font-size: 18px;
+    font-weight: 400;
+    color:#0069ff;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+ul.ul-section{
+    text-align: left;
+}
+ul.ul-section li{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #031b4e80;
+    padding: 17px 10px 17px 30px;
+    position: relative;
+}
+ul.ul-section li:before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width:2px;
+    height: 100%;
+    background:#ddd
+}
+
+ul.ul-section li:hover{
+    cursor:pointer;
+    color: #031b4e;
+}
+ul.ul-section li:hover:before{
+    background:#031b4e80;
+}
+ul.ul-btn-scroller{
+    display: inline-block;
+}
+ul.ul-btn-scroller{
+    display: inline-block;
+    padding:16px 0
+}
+ul.ul-btn-scroller li{
+    background: white;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #006fe8;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+ul.ul-btn-scroller li:hover{
+    background: #006fe8;
+}
+ul.ul-footer {
+    text-align: left;
+    padding-left:0;
+}
+ul.ul-footer li{
+    margin-top: 8px;
+}
+ul.ul-footer a{
+    font-weight: 100;
+    font-size: 1.4rem;
+    font-family: "DM Sans",sans-serif;
+    color: #fff;
+    text-align:left;
+    opacity: 0.4;
+
+}
+ul.ul-footer li:first-child{
+    margin-bottom:14px;
+}
+ul.ul-footer li:first-child a{
+    opacity: 1;
+    font-weight: 500;
+}
+/* #endregion */
+
+
+/* #region  COMPONENTS */
+.navbar-brand>img{
+    display:none
+}
+.form-control{
+    border:1px solid #ddd;
+    box-shadow: none;
+    margin:0;
+}
+.form-control:focus{
+    border-color: #0248ff;
+    outline: 0;
+    box-shadow: none
+}
+.line-hr{
+    display: inline-block;
+    width:33%;
+    position: relative;
+    height:16px;
+}
+@media (min-width:768px)and (max-width:1039px){
+    .line-hr{
+        width:24%;
+    }
+}
+@media (max-width:449px){
+    .line-hr{
+        width:22%;
+    }
+}
+
+
+
+/* #region  CAROUSEL CONTROL */
+.wrapper-scroller {
+    padding: 0 66px;
+    position:relative;
+}
+.control-scroller-l{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:66px;
+    height:100%;
+    background:rgba(0, 0, 0, 0.1);
+}
+.control-scroller-r:before,
+.control-scroller-l:before{
+    position:absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    cursor:pointer;
+}
+.control-scroller-r:before{
+    content:"\f054";
+}
+.control-scroller-l:before{
+    content:"\f053";
+}
+.control-scroller-r{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:66px;
+    height:100%;
+    background:rgba(0, 0, 0, 0.1);
+}
+/* #endregion */
+
+
+
+.line-hr:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:1px;
+    background: #eee;
+    width:88%;
+    margin:auto;
+}
+.center-div{
+    width:100%;
+    text-align: center;
+}
+.pos-absolute-xy{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+.pos-absolute-yl{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%)
+}
+.pos-absolute-yr{
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%)
+}
+.pos-absolute-top{
+    position: absolute;
+    top:0;
+    left:0
+}
+/* #endregion */
+
+
+@media (min-width:1000px) and (max-width:1199px){
+    h1{
+        font-size: 54px;
+    }
+}
+@media (max-width:999px){
+    h1{
+        font-size: 40px;
+    }
+}
