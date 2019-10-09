@@ -6,7 +6,7 @@
     border:0;
     box-shadow: 0 2px 4px rgba(3,27,78,.1);
     z-index:1;
-    background: #fff
+    background: #fff;
 }
 .navbar .navbar_top{
     border-bottom: 1px solid #ddd;
