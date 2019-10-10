@@ -1,0 +1,152 @@
+/* ------------------------------------- TRANSITIONS ----------------------------------- */
+.ex-1-square:hover{
+   background: red;
+}
+.ex-2-square:active{
+   width:100%;
+}
+.ex-3-square:hover{
+   border-radius: 50%;
+}
+.ex-4-square:hover{
+    background: transparent;
+}
+/* .ex-5-square:hover{
+    width:100px;
+    height:100px
+} */ /* versione 1 */
+.ex-5-square:hover{
+   transform: scale(1.6666)
+}
+.ex-5-square:active{
+   transform: scale(0.5)
+}
+.ex-6-img:hover{
+    filter: grayscale()
+}
+.ex-7-img:hover{
+    filter: grayscale()
+}
+.ex-8-img:hover{
+    filter: grayscale(70%);
+    border-radius: 20px;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(70%);
+    border-radius: 20px;
+    transform: scale(1.5)
+}
+.ex-11-icon:hover{
+    animation: rotationSpin 1s ease-in
+}
+.ex-12-button:hover > .ex-12-top-white {
+    animation: moveSpaceRight 2s ease-in
+}
+.ex-12-button:hover > .ex-12-bottom-white {
+    animation: moveSpaceLeft 2s ease-in
+}
+.ex-13-button:hover > .ex-13-top-white {
+    animation: moveSpaceR360 2s 3 ease-in
+}
+.ex-13-button:hover > .ex-13-bottom-white {
+    animation: moveSpaceL360 2s 3 ease-in
+}
+/* ------------------------------------- ANIMATIONS ----------------------------------- */
+@keyframes rotation360 {
+    0%{
+        transform:rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+@keyframes rotationSpin {
+    0%{
+        transform:rotate(0deg);
+    }
+    90% {
+        transform:rotate(320deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes moveSpaceRight{
+    0%{
+        left:10%;
+    }
+    50%{
+        left:65%;
+    }
+    100%{
+        left:10%;
+    }
+}
+@keyframes moveSpaceLeft{
+    0%{
+        right:20%;
+    }
+    50%{
+        right:65%;
+    }
+    100%{
+        right:20%;
+    }
+}
+
+
+
+@keyframes moveSpaceR360 {
+    0%{
+        left:10%;
+        top:-10px
+    }
+    25% {
+        left:85%;
+        top:-10px
+    }
+    45% {
+        left:85%;
+        top:85%
+    }
+    65% {
+        left:-10%;
+        top:85%
+    }
+    85% {
+        left:-10%;
+        top:-10px
+    }
+    100% {
+        left:10%;
+        top:-10px
+        }
+}
+@keyframes moveSpaceL360 {
+    0%{
+        right:20%;
+        bottom:-10px
+    }
+    25% {
+        right:85%;
+        bottom:-10px
+    }
+    45% {
+        right:85%;
+        bottom:85%;
+    }
+    65% {
+        right:-10%;
+        bottom:85%
+    }
+    85% {
+        right:-10%;
+        bottom:-10px;
+    }
+    100% {
+        right:20%;
+        bottom:-10px;
+        }
+}
